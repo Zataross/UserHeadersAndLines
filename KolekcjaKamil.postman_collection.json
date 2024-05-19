@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "1b5ee8ef-d95f-47cc-92cd-1bba92ba9e91",
+		"name": "KolekcjaKamil",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34995203"
+	},
+	"item": [
+		{
+			"name": "Get User Documents",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3QiLCJuYmYiOjE3MTYwODIzMDMsImV4cCI6MTcxNjA4NTkwMywiaWF0IjoxNzE2MDgyMzAzfQ.ZcMWXVlWoDr2MrGm46roEknKfLexW5utexdpuqzv0ic",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/DocumentHeaders/UserDocuments",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"DocumentHeaders",
+						"UserDocuments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Document by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3QiLCJuYmYiOjE3MTYwODIzMDMsImV4cCI6MTcxNjA4NTkwMywiaWF0IjoxNzE2MDgyMzAzfQ.ZcMWXVlWoDr2MrGm46roEknKfLexW5utexdpuqzv0ic",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/DocumentHeaders/Get{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"DocumentHeaders",
+						"Get{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateHeader",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3QiLCJuYmYiOjE3MTYwODIzMDMsImV4cCI6MTcxNjA4NTkwMywiaWF0IjoxNzE2MDgyMzAzfQ.ZcMWXVlWoDr2MrGm46roEknKfLexW5utexdpuqzv0ic",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"string\",\r\n  \"userId\": 1,\r\n  \"documentLines\": [\r\n    {\r\n      \"content\": \"string\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/DocumentHeaders/CreateHeader",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"DocumentHeaders",
+						"CreateHeader"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateLine",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3QiLCJuYmYiOjE3MTYwODIzMDMsImV4cCI6MTcxNjA4NTkwMywiaWF0IjoxNzE2MDgyMzAzfQ.ZcMWXVlWoDr2MrGm46roEknKfLexW5utexdpuqzv0ic",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"content\": \"Testauthline2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/DocumentHeaders/CreateLine{DocumentId}/lines",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"DocumentHeaders",
+						"CreateLine{DocumentId}",
+						"lines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer [Key]",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/User/GetAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"User",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"test\",\r\n  \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44391/api/Auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44391",
+					"path": [
+						"api",
+						"Auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
